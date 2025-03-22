@@ -40,7 +40,7 @@ download_and_extract_models()
 # Configure CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Adjust this in production for security
+    allow_origins=["https://speak-app-ashen.vercel.app/"],  # Adjust this in production for security
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
