@@ -29,7 +29,7 @@ const Controller = () => {
         await axios
           .post("speakapp-production-1a3a.up.railway.app/post-audio", formData, {
             headers: {
-              "Content-Type": "audio/mpeg",
+              "Content-Type": "multipart/form-data",
             },
             responseType: "arraybuffer",
           })
