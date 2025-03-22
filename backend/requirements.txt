@@ -1,0 +1,17 @@
+requests==2.28.2
+fastapi==0.92.0
+uvicorn[standard]
+sentence-transformers
+faiss-cpu
+faster-whisper
+google-generativeai
+SpeechRecognition
+gTTS
+pydub
+python-decouple==3.8
+python-multipart==0.0.6
+aiofiles
+python-dotenv
+gdown
+faster-whisper
+librosa
