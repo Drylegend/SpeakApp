@@ -38,7 +38,7 @@ const Controller = () => {
             const audio = new Audio();
             audio.src = createBlobURL(blob);
 
-            const SpeakAiMessage = { sender: "SpeakAI", blobUrl: audio.src };
+            const SpeakAiMessage = { sender: "SpeakApp", blobUrl: audio.src };
             messagesArr.push(SpeakAiMessage);
             setMessages(messagesArr);
 
@@ -84,13 +84,13 @@ const Controller = () => {
               key={index + audio.sender}
               className={
                 "flex flex-col " +
-                (audio.sender === "SpeakAI" && "flex items-end")
+                (audio.sender === "SpeakApp" && "flex items-end")
               }
             >
               <div className="mt-4">
                 <p
                   className={
-                    audio.sender === "SpeakAI"
+                    audio.sender === "SpeakApp"
                       ? "text-right mr-2 italic text-green-500"
                       : "ml-2 italic text-blue-500"
                   }
@@ -109,7 +109,7 @@ const Controller = () => {
 
           {messages.length === 0 && !isLoading && (
             <div className="text-center font-light italic mt-10">
-              Send SpeakAI a message...
+              Send SpeakApp a message...
             </div>
           )}
 
