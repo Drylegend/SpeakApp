@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/post-audio': {
-        target: 'https://speakapp-production-1a3a.up.railway.app',
+        target: 'http://localhost:8000',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/post-audio/, ''),
       },
