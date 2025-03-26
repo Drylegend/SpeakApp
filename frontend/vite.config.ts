@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/post-audio': {
-        target: 'speakapp-production-1a3a.up.railway.app',
+        target: process.env.VITE_BACKEND_URL, // Use the .env variable
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/post-audio/, ''),
       },
