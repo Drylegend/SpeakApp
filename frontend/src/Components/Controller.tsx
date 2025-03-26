@@ -27,7 +27,7 @@ const Controller = () => {
         formData.append("file", blob, "myFile.wav");
 
         await axios
-          .post("https://speakapp-production-1a3a.up.railway.app/post-audio", formData, {
+          .post(`${import.meta.env.VITE_BACKEND_URL}/post-audio`, formData, {
             headers: {
               "Content-Type": "audio/mpeg",
             },
