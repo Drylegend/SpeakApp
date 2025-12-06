@@ -1,10 +1,10 @@
-🧠 SpeakAI: Intelligent Voice Assistant
+# 🧠 SpeakAI: Intelligent Voice Assistant
 
 A real-time AI-powered voice assistant that listens, understands, and responds with human-like speech.
 
 SpeakAI is a fast, efficient, and offline-capable voice assistant built using modern speech recognition, RAG-based text generation, and lightweight text-to-speech models. It processes user speech locally, generates intelligent responses, and speaks back in real time — all without cloud dependency.
 
-🚀 Overview
+# 🚀 Overview
 
 SpeakAI is designed as a production-oriented, modular system combining:
 
@@ -22,10 +22,12 @@ Frontend UI built with React.js for seamless interaction
 
 The entire system is architected for real-time performance (< 6s response time), portable deployment (including local machines), and multi-language extensibility.
 
-⚙️ System Architecture
+# ⚙️ System Architecture
+```
 User Speaks → Whisper STT → RAG Retriever → LLM Agent → AI Response → Piper TTS → Audio Output
+```
 
-🎯 Key Features
+# 🎯 Key Features
 
 ⚡ Real-time Speech Processing (Whisper)
 
@@ -43,7 +45,7 @@ User Speaks → Whisper STT → RAG Retriever → LLM Agent → AI Response → 
 
 🔒 Production-ready setup with Nginx + Docker
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 Backend & AI Processing
 
 FastAPI — API server
@@ -89,7 +91,7 @@ speakai/
 │── embeddings/
 │── README.md
 
-🐳 Docker Deployment Overview
+# 🐳 Docker Deployment Overview
 Dockerfile (Backend)
 
 A generalised example:
