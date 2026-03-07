@@ -75,6 +75,7 @@ Docker / Docker Compose — Containerized build
 start.sh — Automated startup script (venv creation + Nginx + FastAPI)
 
 📦 Project Structure
+```
 speakai/
 │── backend/
 │   ├── app.py
@@ -90,7 +91,7 @@ speakai/
 │   ├── nginx.conf
 │── embeddings/
 │── README.md
-
+```
 # 🐳 Docker Deployment Overview
 Dockerfile (Backend)
 
